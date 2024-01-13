@@ -1,26 +1,55 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>BJJ Folks Podcast</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BJJ Folks Podcast</title>
+
+  <style>
+    body {
+      background-color: #fff; /* Set default background color */
+      color: #000; /* Set default text color */
+      transition: background-color 0.3s, color 0.3s; /* Smooth transition effect */
+      margin: 0; /* Remove default margin to extend background color to the edges */
+    }
+
+    /* Dark mode styles */
+    body.dark-mode {
+      background-color: #1a1a1a; /* Set dark mode background color */
+      color: #fff; /* Set dark mode text color */
+    }
+
+    /* Style for the toggle button */
+    button.dark-mode-toggle {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 999; /* Ensure it's above other elements */
+    }
+  </style>
 </head>
-
 <body>
-<h1 align="center">Welcome to the BJJ Folks Podcast!</h1>
-<center><a href="https://www.youtube.com/@downculture5060/videos" target="_blank"><img src="BJJ_FOLKS_CROPPED-02.png" width="600" height="800" alt=""/></a></center>
+  <!-- Your existing HTML content goes here -->
+  <h1 align="center">Welcome to the BJJ Folks Podcast!</h1>
+  <center><a href="https://www.youtube.com/@downculture5060/videos" target="_blank"><img src="images/BJJ_FOLKS_CROPPED-02.png" width="600" height="800" alt=""/></a></center>
 
-	<center><h3>Episode 3 - Kerry</h3></center>
-	<center><iframe width="560" height="315" src="https://www.youtube.com/embed/rhqm0c8ZrbE?si=8nexnK5pPbS6SUqa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-	</center><br><br><br>
+  <center><h3>Episode 3 - Kerry</h3></center>
+  <center><iframe width="560" height="315" src="https://www.youtube.com/embed/rhqm0c8ZrbE?si=8nexnK5pPbS6SUqa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center><br><br><br>
 
-	<center><h3>Episode 2 - Brian</h3></center>
-	<center><iframe width="560" height="315" src="https://www.youtube.com/embed/G7svcSH5y7s?si=YoE5XT5JNO602b3R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-	</center><br><br><br>
+  <center><h3>Episode 2 - Brian</h3></center>
+  <center><iframe width="560" height="315" src="https://www.youtube.com/embed/G7svcSH5y7s?si=YoE5XT5JNO602b3R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center><br><br><br>
 
-	<center><h3>Episode 1 - Miguel<h3></center>
-	<center><iframe width="560" height="315" src="https://www.youtube.com/embed/FA_KwUhlo7w?si=1YOEGFP_wJOXRtPv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-	</center><br>
-	
-	
+  <center><h3>Episode 1 - Miguel</h3></center>
+  <center><iframe width="560" height="315" src="https://www.youtube.com/embed/FA_KwUhlo7w?si=1YOEGFP_wJOXRtPv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center><br>
+
+  <!-- Toggle Dark Mode Button -->
+  <button class="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+  <!-- JavaScript for Dark Mode Toggle -->
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+  </script>
 </body>
 </html>
